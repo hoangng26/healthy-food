@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0 10px;
+}
+header .logo {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+header .logo img {
+  height: 100px;
+}
+header .banner h1 {
+  color: #fff;
+  font-size: 29px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  header .banner h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .logo,
+header .banner {
+    padding: 0 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    justify-content: flex-start;
+  }
+}

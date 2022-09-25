@@ -1,0 +1,64 @@
+@import './variable';
+
+footer {
+    @include normal-flex;
+    flex-direction: column;
+    background-color: $gray;
+    color: $text-primary-color;
+    padding: 20px;
+    font-size: 12px;
+
+    .links {
+        @include normal-flex;
+        flex-direction: column;
+        width: 100%;
+        .contact-download,
+        .social-links {
+            @include normal-flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .contact-download {
+            @media screen and (min-width: 768px) {
+                justify-content: flex-start;
+                a {
+                    padding-right: 20px;
+                }
+            }
+        }
+
+        .social-links {
+            width: 70%;
+            font-size: 24px;
+            margin: 15px 0;
+            @media screen and (min-width: 768px) {
+                justify-content: flex-end;
+                margin: 0;
+                a {
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        a {
+            color: $text-primary-color;
+        }
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 40px;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+    p ~ p {
+        margin-top: 15px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        padding: 50px 200px;
+    }
+}

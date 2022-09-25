@@ -1,0 +1,131 @@
+.features {
+  padding: 25px 0;
+}
+.features .feature-item {
+  padding: 10px 15px;
+}
+.features .feature-item .icon {
+  font-size: 50px;
+  color: #e67e22;
+}
+.features .feature-item .title {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .features .feature-item .title {
+    font-size: 22px;
+  }
+}
+.features .feature-item .description {
+  font-size: 14px;
+  text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .features .feature-item .description {
+    font-size: 16px;
+  }
+}
+.features .feature-item .title,
+.features .feature-item .description {
+  color: #777;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    padding: 100px 200px;
+  }
+}
+
+.gallery {
+  margin: 20px 0;
+}
+.gallery .slider img {
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .gallery .slider img {
+    width: 85%;
+    opacity: 0.75;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  .gallery .slider img:hover {
+    transform: scale(1);
+    transition: all 0.3s ease;
+    opacity: 1;
+  }
+}
+
+.locations {
+  margin: 20px 0;
+}
+.locations .location-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .locations .location-title {
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+}
+.locations .location-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.locations .slider .location-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.locations .slider .location-item img {
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .locations .slider .location-item img {
+    margin-bottom: 20px;
+  }
+}
+.locations .slider .location-item h3 {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .locations .slider .location-item h3 {
+    font-size: 1.5em;
+  }
+}
+.locations .slider .location-item .information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.locations .slider .location-item .information .icon {
+  margin: 0 5px;
+}
+.locations .slider .location-item .information .icon,
+.locations .slider .location-item .information a {
+  color: #e67e22;
+}
+@media screen and (min-width: 768px) {
+  .locations .slider .location-item .information .icon,
+.locations .slider .location-item .information .description {
+    font-size: 1.15em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .locations {
+    margin: 100px 0;
+  }
+}

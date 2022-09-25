@@ -1,0 +1,10 @@
+@import './header';
+@import './variable';
+@import './section';
+@import './footer';
+
+body {
+    font-family: $font-family;
+    font-weight: 300;
+    line-height: 1.5;
+}
